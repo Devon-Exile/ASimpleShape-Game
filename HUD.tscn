@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://chkshjasb7n16"]
+
+[ext_resource type="Script" uid="uid://exbplyoyv2j6" path="res://HUD.gd" id="1_k5de2"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_k5de2")
+
+[node name="Health" type="Label" parent="."]
+offset_left = 41.0
+offset_top = 15.0
+offset_right = 217.0
+offset_bottom = 89.0
+text = "Hello"
+horizontal_alignment = 1
+vertical_alignment = 1

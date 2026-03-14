@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://de1d55m6ndnip"]
+
+[ext_resource type="Script" uid="uid://ce5mwo1anubjv" path="res://PlayerMainScript.gd" id="1_2l4wb"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dbr6o"]
+radius = 31.016125
+
+[node name="Player" type="CharacterBody2D" groups=["player"]]
+script = ExtResource("1_2l4wb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_dbr6o")
+
+[node name="Visual" type="Node2D" parent="."]
+
+[node name="ColorTimer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="ColorTimer" to="." method="_on_color_timer_timeout"]

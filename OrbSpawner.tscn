@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://bg42gy6trjnnu"]
+
+[ext_resource type="Script" uid="uid://bi6a60nwaigkn" path="res://OrbSpawnerScript.gd" id="1_8p6vk"]
+[ext_resource type="PackedScene" uid="uid://b4qtjss0gnn8x" path="res://Orb.tscn" id="2_8jy4q"]
+
+[node name="OrbSpawner" type="Node2D"]
+script = ExtResource("1_8p6vk")
+orb_scene = ExtResource("2_8jy4q")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 1.5
+autostart = true

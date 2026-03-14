@@ -1,0 +1,39 @@
+[gd_scene load_steps=7 format=3 uid="uid://dhuwyykrsmegv"]
+
+[ext_resource type="PackedScene" uid="uid://de1d55m6ndnip" path="res://Player.tscn" id="1_fqhjb"]
+[ext_resource type="PackedScene" uid="uid://bg42gy6trjnnu" path="res://OrbSpawner.tscn" id="2_7u2t8"]
+[ext_resource type="PackedScene" uid="uid://chkshjasb7n16" path="res://HUD.tscn" id="3_4xxmu"]
+[ext_resource type="Script" uid="uid://bqofkjieeok67" path="res://Camera.gd" id="4_x0tsy"]
+[ext_resource type="AudioStream" uid="uid://cgm4nosg3t5tr" path="res://BeepBox-Song.mp3" id="5_ngold"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fqhjb"]
+size = Vector2(1434.5, 118)
+
+[node name="MainWorld" type="Node2D"]
+
+[node name="HUD" parent="." instance=ExtResource("3_4xxmu")]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0, 0, 0, 1)
+
+[node name="Borgle" parent="." instance=ExtResource("1_fqhjb")]
+position = Vector2(477, 543)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(634.75, 691)
+shape = SubResource("RectangleShape2D_fqhjb")
+
+[node name="OrbSpawner" parent="." instance=ExtResource("2_7u2t8")]
+
+[node name="Camera2D" type="Camera2D" parent="." groups=["camera"]]
+position = Vector2(576, 324)
+script = ExtResource("4_x0tsy")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_ngold")
+volume_db = -8.078
+autoplay = true
