@@ -13,7 +13,7 @@ config_version=5
 config/name="ASimpleShape"
 run/main_scene="uid://dhuwyykrsmegv"
 config/features=PackedStringArray("4.5", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://Art/icon.svg"
 
 [global_group]
 

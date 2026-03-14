@@ -1,10 +1,10 @@
 [gd_scene load_steps=7 format=3 uid="uid://dhuwyykrsmegv"]
 
-[ext_resource type="PackedScene" uid="uid://de1d55m6ndnip" path="res://Player.tscn" id="1_fqhjb"]
-[ext_resource type="PackedScene" uid="uid://bg42gy6trjnnu" path="res://OrbSpawner.tscn" id="2_7u2t8"]
-[ext_resource type="PackedScene" uid="uid://chkshjasb7n16" path="res://HUD.tscn" id="3_4xxmu"]
-[ext_resource type="Script" uid="uid://bqofkjieeok67" path="res://Camera.gd" id="4_x0tsy"]
-[ext_resource type="AudioStream" uid="uid://cgm4nosg3t5tr" path="res://BeepBox-Song.mp3" id="5_ngold"]
+[ext_resource type="PackedScene" uid="uid://de1d55m6ndnip" path="res://Scenes/Player.tscn" id="1_fqhjb"]
+[ext_resource type="PackedScene" uid="uid://bg42gy6trjnnu" path="res://Scenes/OrbSpawner.tscn" id="2_7u2t8"]
+[ext_resource type="PackedScene" uid="uid://chkshjasb7n16" path="res://Scenes/HUD.tscn" id="3_4xxmu"]
+[ext_resource type="Script" uid="uid://bqofkjieeok67" path="res://Scripts/Camera.gd" id="4_x0tsy"]
+[ext_resource type="AudioStream" uid="uid://cgm4nosg3t5tr" path="res://Art/BeepBox-Song.mp3" id="5_ngold"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fqhjb"]
 size = Vector2(1434.5, 118)
